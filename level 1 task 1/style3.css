@@ -1,0 +1,64 @@
+:root {
+  --bone:      oklch(0.965 0.012 80);
+  --bone-2:    oklch(0.935 0.016 78);
+  --espresso:  oklch(0.225 0.018 56);
+  --ink:       oklch(0.255 0.012 60);
+  --ink-soft:  oklch(0.46 0.012 62);
+  --line:      oklch(0.87 0.016 74);
+  --line-dark: oklch(0.34 0.02 56);
+  --clay:      oklch(0.62 0.135 48);
+  --clay-deep: oklch(0.52 0.13 46);
+  --olive:     oklch(0.62 0.115 124);
+  --cream:     oklch(0.93 0.014 80);
+  --radius: 4px;
+  --radius-lg: 10px;
+  --maxw: 1080px;
+  --gut: clamp(22px, 6vw, 56px);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: "Archivo", system-ui, sans-serif;
+  background: var(--bone); color: var(--ink);
+  line-height: 1.65; font-size: 17px;
+  -webkit-font-smoothing: antialiased; 
+  text-rendering: optimizeLegibility;
+}
+
+.pricing{
+    border: 1px solid;
+    display: block;
+    /* background-color: black; */
+    height: 250px;
+    width: 200px;
+    border-radius: 9px;
+    padding: 25px;
+    overflow: hidden;
+}
+
+button{
+    padding: 10px 70px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: var(--clay);
+    
+
+
+
+}
+.prices{
+   display: flex; 
+   flex-direction: row;
+   gap: 10px;
+}
+Footer
+footer {
+  display: flex; justify-content: center; align-items: center;
+  margin-top: auto; background: var(--espresso); color: var(--cream);
+  min-height: 200px; padding: 40px var(--gut); gap: 32px; flex-wrap: wrap;
+}
+footer div { display: flex; flex-direction: column; padding: 16px; gap: 6px; font-size: 0.94rem; line-height: 1.7; }
+footer a { color: oklch(0.85 0.012 78); transition: color .2s; }
+footer a:hover { color: var(--clay); }
+footer hr { width: 100%; border: none; border-top: 1px solid var(--line-dark); }
+.moto { font-family: "Anton", sans-serif; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.04em; }

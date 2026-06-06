@@ -136,7 +136,7 @@ footer {
   margin-top: auto;
   background: var(--espresso);
   color: var(--cream);
-  height: 480px;
+  height: 300px;
 }
 
 footer div {
@@ -149,6 +149,10 @@ footer div {
   flex-direction: row;
   gap: 20px;
   padding-top: 30px;
+}
+
+.btn-hero a {
+  text-decoration: none;
 }
 
 .btn-hero {
